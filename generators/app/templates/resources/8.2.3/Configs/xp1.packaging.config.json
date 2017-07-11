@@ -1,0 +1,24 @@
+{
+    "scwdps":[
+        {
+            "role" : "cd",
+            "parametersXml": "<%= name %>.CD.parameters.xml",
+            "sccpls" : ["Sitecore.Cloud.RoleSpecific_CD.sccpl", "Sitecore.Cloud.Redis_CD.sccpl", "Sitecore.Cloud.Thundercracker_CD.sccpl", "Sitecore.Cloud.Security_CD.sccpl"]
+        },
+        {
+            "role" : "cm",
+            "parametersXml": "<%= name %>.CM.parameters.xml",
+            "sccpls" : ["Sitecore.Cloud.RoleSpecific_CM.sccpl", "Sitecore.Cloud.HttpsRedirection.sccpl", "Sitecore.Cloud.IPSecurity.sccpl"]
+        },
+        {
+            "role" : "prc",
+            "parametersXml": "<%= name %>.PRC.parameters.xml",
+            "sccpls" : ["Sitecore.Cloud.RoleSpecific_PRC.sccpl", "Sitecore.Cloud.HttpsRedirection.sccpl", "Sitecore.Cloud.IPSecurity.sccpl"]
+        },
+        {
+            "role" : "rep",
+            "parametersXml": "<%= name %>.REP.parameters.xml",
+            "sccpls" : ["Sitecore.Cloud.RoleSpecific_REP.sccpl", "Sitecore.Cloud.HttpsRedirection.sccpl"]
+        }
+    ]
+}

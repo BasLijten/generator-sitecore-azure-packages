@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Bas Lijten",
+      "authorEmail": "bas.lijten@gmail.com",
+      "authorUrl": "blog.baslijten.com"
+    }
+  }
+}
