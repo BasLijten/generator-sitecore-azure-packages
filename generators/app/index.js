@@ -47,22 +47,22 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    // 
+    var target = "configuration\\";
     this.fs.copy(
       this.templatePath('resources\\' + this.props.version + '\\configs\\common.packaging.config.json'),
-      this.destinationPath(this.props.name + '\\configs\\common.packaging.config.json')
+      this.destinationPath(target + this.props.name + '\\configs\\common.packaging.config.json')
     );
 
     this.fs.copyTpl(
       this.templatePath('resources\\' + this.props.version + '\\configs\\' + this.props.SKU + '.packaging.config.json'),
-      this.destinationPath(this.props.name + '\\configs\\' + this.props.name + '.packaging.config.json'), {
+      this.destinationPath(target + this.props.name + '\\configs\\' + this.props.name + '.packaging.config.json'), {
         name: this.props.name
       }
     );
 
     this.fs.copy(
       this.templatePath('resources\\' + this.props.version + '\\MsDeployXmls\\' + this.props.SKU + '*'),
-      this.destinationPath(this.props.name + '\\MsDeployXmls\\')
+      this.destinationPath(target + this.props.name + '\\MsDeployXmls\\')
     );
   }
 
