@@ -3,7 +3,7 @@
     <parameterEntry type="ProviderPath" scope="iisapp" match="WebSite" />
   </parameter>
   <!-- "Sitecore Admin New Password" for this role, will be removed in next major release -->
-  <parameter name="Sitecore Admin New Password" description="" tags="SQL, Hidden, DbUserPassword">
+  <!--<parameter name="Sitecore Admin New Password" description="" tags="SQL, Hidden, DbUserPassword">
     <parameterEntry type="TextFile" scope="SetSitecoreAdminPassword.sql" match="PlaceHolderForPassword" />
   </parameter>
   <parameter name="Core DB User Name" description="User name to access you Core database." tags="SQL, Hidden, DbUsername">
@@ -38,11 +38,11 @@
   </parameter>
   <parameter name="Tracking Contact Connection String" description="MongoDB Connection string to enter into config" tags="Hidden,NoStore">
     <parameterEntry kind="XmlFile" scope="App_Config\\ConnectionStrings\.config$" match="//connectionStrings/add[@name='tracking.contact']/@connectionString" />
-  </parameter>
+  </parameter>-->
   <parameter name="Application Insights Role" description="Sitecore Application Insights Role" tags="Hidden,NoStore">
     <parameterEntry kind="XmlFile" scope="App_Config\\Include\\zzz\\Sitecore\.Cloud\.ApplicationInsights\.config$" match="//settings/setting[@name='ApplicationInsights.Role']/@value" />
   </parameter>
-  <parameter name="Cloud Search Connection String" description="Cloud Search Connection String to enter into config" tags="SQL, Hidden,NoStore">
+  <!--<parameter name="Cloud Search Connection String" description="Cloud Search Connection String to enter into config" tags="SQL, Hidden,NoStore">
     <parameterEntry kind="XmlFile" scope="App_Config\\ConnectionStrings\.config$" match="//connectionStrings/add[@name='cloud.search']/@connectionString" />
   </parameter>
   <parameter name="Application Insights Instrumentation Key" description="Sitecore Application Insights Instrumentation Key" tags="Hidden,NoStore">
@@ -50,7 +50,7 @@
   </parameter>
   <parameter name="Redis Connection String" description="Redis Connection String" tags="Hidden,NoStore">
     <parameterEntry kind="XmlFile" scope="App_Config\\ConnectionStrings\.config$" match="//connectionStrings/add[@name='redis.sessions']/@connectionString" />
-  </parameter>
+  </parameter>-->
   <parameter name="License Xml" tags="Hidden,NoStore">   
      <parameterEntry type="TextFile" scope= "App_Data\\license.xml" match="LicenseContent" />   
    </parameter>

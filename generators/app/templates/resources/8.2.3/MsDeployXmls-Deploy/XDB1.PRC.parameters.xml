@@ -2,7 +2,7 @@
   <parameter name="Application Path" description="Full site path where you would like to install your application (i.e., Default Web Site/Content)" defaultValue="Default Web Site/Content" tags="iisapp">
     <parameterEntry type="ProviderPath" scope="iisapp" match="WebSite" />
   </parameter>
-  <parameter name="Sitecore Admin New Password" description="" tags="SQL, Hidden, DbUserPassword">
+  <!--<parameter name="Sitecore Admin New Password" description="" tags="SQL, Hidden, DbUserPassword">
     <parameterEntry type="TextFile" scope="SetSitecoreAdminPassword.sql" match="PlaceHolderForPassword" />
   </parameter>
   <parameter name="Core DB User Name" description="User name to access you Core database." tags="SQL, Hidden, DbUsername">
@@ -75,7 +75,7 @@
   </parameter>
   <parameter name="Application Insights Instrumentation Key" description="Sitecore Application Insights Instrumentation Key" tags="Hidden,NoStore">
     <parameterEntry kind="XmlFile" scope="App_Config\\ConnectionStrings\.config$" match="//connectionStrings/add[@name='appinsights.instrumentationkey']/@connectionString" />
-  </parameter>
+  </parameter>-->
   <parameter name="Application Insights Role" description="Sitecore Application Insights Role" tags="Hidden,NoStore">
     <parameterEntry kind="XmlFile" scope="App_Config\\Include\\zzz\\Sitecore\.Cloud\.ApplicationInsights\.config$" match="//settings/setting[@name='ApplicationInsights.Role']/@value" />
   </parameter>

@@ -2,7 +2,7 @@
     "scwdps":[
         {
             "role" : "single",
-            "parametersXml": "xP0.parameters.xml",
+            "parametersXml": "<%= name %>-<%= deploymenttype %>.parameters.xml",
             "sccpls" : ["Sitecore.Cloud.RoleSpecific_Single.sccpl"]
         }
     ]
